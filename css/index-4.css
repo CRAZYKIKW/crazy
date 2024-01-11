@@ -1,0 +1,80 @@
+body {
+    overflow-y: auto;
+    margin: 0;
+    overflow-y: auto;
+    flex-direction: column;
+    background-repeat: no-repeat; /* 背景圖片不重複 */
+    background-size: cover; /* 讓背景圖片覆蓋整個畫面 */
+}
+#loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000000;
+    z-index: 9999;
+}
+
+#loading img {
+    width: 50vw; /* 使用 vw 單位 */
+    max-width: 100%;
+}
+
+#content {
+    display: none;
+}
+
+#inner-content {
+    background-color: rgba(175, 142, 118, 0.8);
+    padding: 2%; /* 使用百分比調整 padding */
+    border-radius: 1vw; /* 使用 vw 單位 */
+    text-align: center;
+    align-items: center;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+img {
+    width: 80%; /* 使用百分比調整寬度 */
+    height: auto;
+    margin-top: 2vw; /* 使用 vw 單位 */
+    margin-bottom: 2vw; /* 使用 vw 單位 */
+    max-width: 100%;
+}
+
+h1, h3, p {
+    font-size: 2vw; /* 使用 vw 單位 */
+    max-width: 90vw; /* 使用 vw 單位 */
+    margin-top: 2vw; /* 使用 vw 單位 */
+    margin-bottom: 2vw; /* 使用 vw 單位 */
+}
+
+#main_me {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+#main_me li {
+    display: inline-flex;
+    margin: 2vw; /* 使用 vw 單位 */
+}
+
+#main_me li a {
+    display: block;
+    padding: 2vw 5vw; /* 使用 vw 單位 */
+    text-decoration: none;
+    color: #ffffff;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 2vw;
+}
+
+#main_me li a:hover {
+    color: rgb(255, 0, 0);
+}

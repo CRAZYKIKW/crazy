@@ -1,0 +1,81 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #ffffff;
+    transition: background-image 1s ease;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    font-family: Arial, sans-serif;
+}
+
+#inner-content {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 2%; /* 使用百分比調整 padding */
+    border-radius: 1vw; /* 使用 vw 單位 */
+    text-align: center;
+    align-items: center;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+img {
+    max-width: 100%; /* 使用 max-width 以便在小螢幕上縮放 */
+    max-height: 100%; /* 使用 max-height 以便在小螢幕上縮放 */
+    margin-top: 2vw; /* 使用 vw 單位 */
+    margin-bottom: 2vw; /* 使用 vw 單位 */
+}
+
+#main_me {
+    list-style: none;
+    padding: 0;
+    text-align: center; /* 新增這一行 */
+}
+
+#main_me li {
+    display: inline-flex;
+    margin: 10px; /* 調整按鈕之間的間距 */
+}
+
+#main_me li a {
+    display: block;
+    padding: 20px 10px;
+    text-decoration: none;
+    color: #ffffff;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 30px;
+}
+
+.container {
+    max-width: 80vw; /* 使用 vw 單位 */
+    margin: auto;
+}
+
+.image-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1vw; /* 使用 vw 單位 */
+    cursor: pointer;
+    background-color: #f0f0f0;
+    padding: 0.5vw; /* 使用 vw 單位 */
+    border-radius: 0.2vw; /* 使用 vw 單位 */
+    width: 8vw; /* 使用 vw 單位 */
+    height: 4vw; /* 使用 vw 單位 */
+}
+
+#displayed-image {
+    max-width: 100%;
+    max-height: 100%;
+    border: 0.2vw solid #333; /* 使用 vw 單位 */
+    margin-bottom: 1vw; /* 使用 vw 單位 */
+}
+
+.image-button span {
+    text-align: center;
+}

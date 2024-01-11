@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/index.css">
+    <style>
+      body {
+            overflow-y: auto;
+            margin: 0;
+            overflow-y: auto;
+            flex-direction: column;
+          }
+     div{
+        width: 100%;
+        height: auto;
+        margin: auto;
+    }
+     @keyframes changeBackground {
+    0% { background-image: url(img/AnyConv.com__main.webp);margin: auto; }
+    25% { background-image: url(img/AnyConv.com__main-02.webp);margin: auto; }
+    50% { background-image: url(img/AnyConv.com__main-03.webp);margin: auto; }
+    75% { background-image: url(img/AnyConv.com__main-05.webp);margin: auto; }
+    100% { background-image: url(img/AnyConv.com__main.webp);margin: auto; }
+}
+
+    </style>
+</head>
+<body>
+
+    <div id="loading">
+        <img src="img/mp4/SAGA.gif" alt="Loading GIF">
+    </div>
+    <nav>
+        <ul id="main_me">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="index/index-2.html">MUSIC</a></li>
+            <li><a href="index/index-3.html">CHARACTER/CAST</a></li>
+            <li><a href="index/index-4.html">STORY</a></li>
+        </ul>
+    </nav>
+    <div id="content">
+        <p>
+            <iframe width="1080" height="720" src="https://www.youtube.com/embed/UkJmBWvCfNU" frameborder="0" allowfullscreen></iframe>
+        </p>
+        <p>
+            <iframe width="1080" height="720" src="https://www.youtube.com/embed/x2aneW0sH7c?si=6rYtIAIO9h_EbZl8"  frameborder="0" allowfullscreen></iframe>
+        </p>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var loadingScreen = document.getElementById("loading");
+            var content = document.getElementById("content");
+            setTimeout(function () {
+                loadingScreen.style.display = "none";
+                content.style.display = "block";
+            }, 4000); 
+        });
+    </script>
+</body>
+</html>

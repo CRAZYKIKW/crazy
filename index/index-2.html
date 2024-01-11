@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/index-1.css">
+    <style>
+      body {
+            overflow-y: auto;
+            margin: 0;
+            overflow-y: auto;
+            flex-direction: column;
+            background-image: url(../img/AnyConv.com__main-02.webp); 
+          }
+     div{
+        width: 80%;
+        max-width: 1357px; 
+        margin: auto;
+    }
+    </style>
+</head>
+<body>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/index-1.css">
+    <style>
+      body {
+            overflow-y: auto;
+            margin: 0;
+            overflow-y: auto;
+            flex-direction: column;
+            background-image: url(../img/AnyConv.com__main-02.webp); 
+          }
+     div{
+        width: 80%;
+        max-width: 1357px; 
+        margin: auto;
+    }
+    </style>
+</head>
+<body>
+
+    <div id="loading">
+        <img src="../img/mp4/SAGA.gif" alt="Loading GIF">
+    </div>
+    <nav>
+        <ul id="main_me">
+            <li><a href="../index.html">HOME</a></li>
+            <li><a href="../index/index-2.html">MUSIC</a></li>
+            <li><a href="../index/index-3.html">CHARACTER/CAST</a></li>
+            <li><a href="../index/index-4.html">STORY</a></li>
+        </ul>
+    </nav>
+    <div id="content">
+        <div id="inner-content">
+        <h3>Survive Said The Prophet 「MUKANJYO」</h3>
+        <img src="../img/AnyConv.com__ms1.webp" alt="img">
+        <audio id="audioPlayer" controls>
+            <source src="../mp3/AnyConv.com__mukan.ogg" type="audio/mp3">
+        </audio>
+        <h3>Aimer 「Torches」</h3>
+        <img src="../img/AnyConv.com__ms2.webp" alt="img">
+        <audio id="audioPlayer" controls>
+        <source src="../mp3/AnyConv.com__Torches _ Aimer [English subtitle] (Anime Vinland Saga Ending_ED).ogg" type="audio/mp3">
+        </audio>
+        <h3>MAN WITH A MISSION 「Dark Crow」</h3>
+        <img src="../img/AnyConv.com__ms3.webp" alt="img">
+        <audio id="audioPlayer" controls>
+        <source src="../mp3/AnyConv.com__dark.ogg" type="audio/mp3">
+        </audio>    
+        <h3>milet 「Drown」</h3>
+        <img src="../img/AnyConv.com__ms4.webp" alt="img">
+        <audio id="audioPlayer" controls>
+            <source src="../mp3/AnyConv.com__milet.ogg" type="audio/mp3">
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var loadingScreen = document.getElementById("loading");
+            var content = document.getElementById("content");
+
+
+            loadingScreen.style.display = "none";
+
+            content.style.display = "block";
+        });
+  
+        var audio = document.getElementById("audioPlayer");
+        function playAudio() {
+            audio.play();
+        }
+        function pauseAudio() {
+            audio.pause();
+        }
+        audio.addEventListener('timeupdate', function() {
+            var currentTime = audio.currentTime;
+            var duration = audio.duration;
+            var progressBar = (currentTime / duration) * 100;
+            console.log("Current Time: " + currentTime);
+            console.log("Duration: " + duration);
+            console.log("Progress Bar: " + progressBar + "%");
+        });
+    </script>
+    </script>
+</body>
+</html>">HOME</a></li>
+            <li><a href="../index/index-2.HTML">MUSIC</a></li>
+            <li><a href="../index/index-3.HTML">CHARACTER/CAST</a></li>
+            <li><a href="../index/index-4.HTML">STORY</a></li>
+        </ul>
+    </nav>
+    <div id="content">
+        <div id="inner-content">
+        <h3>Survive Said The Prophet 「MUKANJYO」</h3>
+        <img src="../img/AnyConv.com__ms1.webp" alt="img">
+        <audio id="audioPlayer" controls>
+            <source src="../mp3/AnyConv.com__mukan.ogg" type="audio/mp3">
+        </audio>
+        <h3>Aimer 「Torches」</h3>
+        <img src="../img/AnyConv.com__ms2.webp" alt="img">
+        <audio id="audioPlayer" controls>
+        <source src="../mp3/AnyConv.com__Torches _ Aimer [English subtitle] (Anime Vinland Saga Ending_ED).ogg" type="audio/mp3">
+        </audio>
+        <h3>MAN WITH A MISSION 「Dark Crow」</h3>
+        <img src="../img/AnyConv.com__ms3.webp" alt="img">
+        <audio id="audioPlayer" controls>
+        <source src="../mp3/AnyConv.com__dark.ogg" type="audio/mp3">
+        </audio>    
+        <h3>milet 「Drown」</h3>
+        <img src="../img/AnyConv.com__ms4.webp" alt="img">
+        <audio id="audioPlayer" controls>
+            <source src="../mp3/AnyConv.com__milet.ogg" type="audio/mp3">
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var loadingScreen = document.getElementById("loading");
+            var content = document.getElementById("content");
+
+
+            loadingScreen.style.display = "none";
+
+            content.style.display = "block";
+        });
+  
+        var audio = document.getElementById("audioPlayer");
+        function playAudio() {
+            audio.play();
+        }
+        function pauseAudio() {
+            audio.pause();
+        }
+        audio.addEventListener('timeupdate', function() {
+            var currentTime = audio.currentTime;
+            var duration = audio.duration;
+            var progressBar = (currentTime / duration) * 100;
+            console.log("Current Time: " + currentTime);
+            console.log("Duration: " + duration);
+            console.log("Progress Bar: " + progressBar + "%");
+        });
+    </script>
+    </script>
+</body>
+</html>
